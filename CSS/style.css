@@ -312,26 +312,38 @@ nav {
   color: white;
 }
 /* banner css ends here */
-#category {
+#category,
+#trending,
+#destination {
   margin-top: 220px;
 }
-#category .top_cnt {
+#category .top_cnt,
+#trending .top_cnt,
+#destination .top_cnt {
   display: flex;
   justify-content: space-between;
 }
-#category .top_cnt .heading h3 {
+#category .top_cnt .heading h3,
+#trending .top_cnt .heading h3,
+#destination .top_cnt .heading h3 {
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
 }
 
-#category .top_cnt .heading p {
+#category .top_cnt .heading p,
+#trending .top_cnt .heading p,
+#destination .top_cnt .heading p {
   font-size: 24px;
   color: #546179;
 }
 
 #category .top_cnt .arrow_icon .angle_left,
-#category .top_cnt .arrow_icon .angle_right {
+#category .top_cnt .arrow_icon .angle_right,
+#trending .top_cnt .arrow_icon .angle_left,
+#trending .top_cnt .arrow_icon .angle_right,
+#destination .top_cnt .arrow_icon .angle_left,
+#destination .top_cnt .arrow_icon .angle_right {
   color: #000000;
   display: inline-block;
   text-align: center;
@@ -352,22 +364,34 @@ nav {
   -o-transition: 0.3s;
 }
 
-#category .top_cnt .arrow_icon a i {
+#category .top_cnt .arrow_icon a i,
+#trending .top_cnt .arrow_icon a i,
+#destination .top_cnt .arrow_icon a i {
   font-size: 24px;
 }
 
 #category .top_cnt .arrow_icon .angle_left:hover,
-#category .top_cnt .arrow_icon .angle_right:hover {
+#category .top_cnt .arrow_icon .angle_right:hover,
+#trending .top_cnt .arrow_icon .angle_left:hover,
+#trending .top_cnt .arrow_icon .angle_right:hover,
+#destination .top_cnt .arrow_icon .angle_left:hover,
+#destination .top_cnt .arrow_icon .angle_right:hover {
   background-color: #28b0a6;
   border: none;
 }
 
 #category .top_cnt .arrow_icon .angle_left:hover i,
-#category .top_cnt .arrow_icon .angle_right:hover i {
+#category .top_cnt .arrow_icon .angle_right:hover i,
+#trending .top_cnt .arrow_icon .angle_left:hover i,
+#trending .top_cnt .arrow_icon .angle_right:hover i,
+#destination .top_cnt .arrow_icon .angle_left:hover i,
+#destination .top_cnt .arrow_icon .angle_right:hover i {
   color: white;
 }
 
-#category .category_cards {
+#category .category_cards,
+#trending .trending_cards,
+#destination .destination_gallary {
   margin-top: 64px;
   display: flex;
 }
@@ -425,3 +449,290 @@ nav {
   font-size: 16px;
   color: #99a3ad;
 }
+#trending .trending_cards .card {
+  position: relative;
+  width: 512px;
+  height: 614px;
+  margin: 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#trending .trending_cards .card img {
+  padding: 16px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#trending .trending_cards .card .offer {
+  position: absolute;
+  right: 38px;
+  top: 32px;
+  width: 56px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  color: #ee5879;
+  background-color: #f9c7d2;
+  border: none;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+#trending .trending_cards .card .card_details {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+#trending .trending_cards .card .card_details .card_heading h3 {
+  font-size: 24px;
+  color: #1d293f;
+}
+
+#trending .trending_cards .card .card_details .card_heading p {
+  color: #99a3ad;
+}
+
+#trending .trending_cards .card .card_details .heart_icon i {
+  margin-top: 10px;
+  padding-right: 30px;
+  font-size: 24px;
+  color: #546179;
+}
+#trending .trending_cards .card .price_rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#trending .trending_cards .card .price_rating .price p {
+  color: #546179;
+  font-size: 14px;
+}
+
+#trending .trending_cards .card .price_rating .price h2 {
+  color: #1d293f;
+  font-size: 32px;
+}
+
+#trending .trending_cards .card .price_rating .rating {
+  margin-top: 15px;
+}
+
+#trending .trending_cards .card .price_rating .rating .star-icon i {
+  color: #f5a623;
+  font-size: 11px;
+}
+#trending .trending_cards .card .price_rating .rating .review p {
+  color: #546179;
+  font-size: 14px;
+  text-align: right;
+}
+#trending .trending_cards .card .time {
+  padding: 16px;
+}
+#trending .trending_cards .card .time .clock-icon i {
+  color: #28b0a6;
+  font-size: 18px;
+}
+#trending .trending_cards .card .time .clock-icon p {
+  display: inline-block;
+  font-size: 16px;
+}
+
+#trending .trending_cards .card .other_details {
+  padding: 16px;
+}
+#trending .trending_cards .card .other_details i {
+  color: #28b0a6;
+  font-size: 18px;
+  padding-right: 12px;
+}
+#trending .trending_cards .card .other_details p {
+  display: inline-block;
+
+  font-size: 16px;
+  color: #546179;
+  padding-right: 12px;
+}
+
+#destination .destination_gallary .first_part {
+  width: 25%;
+}
+#destination .destination_gallary .first_part .vietnam,
+#destination .destination_gallary .first_part .old_rain {
+  width: 376px;
+  height: 335px;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 15px 0px 15px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  display: inline-block;
+  background-position: center;
+  border-radius: 32px;
+  transition: 0.5s;
+  position: relative;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+#destination .destination_gallary .second_part .greece {
+  width: 512px;
+  height: 702px;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 15px 15px 25px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  display: inline-block;
+  background-position: center;
+  border-radius: 32px;
+  transition: 0.5s;
+  position: relative;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+#destination .destination_gallary .third_part .london {
+  width: 648px;
+  height: 335px;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 15px 25px 25px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  display: inline-block;
+  background-position: center;
+  border-radius: 32px;
+  transition: 0.5s;
+  position: relative;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+
+#destination .destination_gallary .third_part .lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+#destination .destination_gallary .third_part .lower .amsterdam {
+  width: 315px;
+  height: 325px;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 15px 15px 25px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  display: inline-block;
+  background-position: center;
+  border-radius: 32px;
+  transition: 0.5s;
+  position: relative;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
+}
+#destination .destination_gallary .third_part .lower .paris {
+  width: 435px;
+  height: 325px;
+  background-color: rgba(0, 0, 0, 0.322);
+  margin: 15px 0px 25px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  display: inline-block;
+  background-position: center;
+  border-radius: 32px;
+  transition: 0.5s;
+  position: relative;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+
+#destination .destination_gallary .second_part {
+  width: 35%;
+}
+#destination .destination_gallary .third_part {
+  width: 40%;
+}
+
+#pic1 {
+  background-image: url("../Images/destination\ 1.png");
+}
+#pic2 {
+  background-image: url("../Images/destination\ 2.png");
+}
+#pic3 {
+  background-image: url("../Images/destination\ 3.png");
+}
+#pic4 {
+  background-image: url("../Images/destination\ 4.png");
+}
+#pic5 {
+  background-image: url("../Images/destination\ 5.png");
+}
+#pic6 {
+  background-image: url("../Images/destination\ 6.png");
+}
+
+#destination .destination_gallary .rating {
+  width: 56px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  color: #f5a623;
+  background-color: #fef2de;
+  border: none;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+#destination .destination_gallary .place_details {
+  color: #fff;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+#destination .destination_gallary .place_details h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#destination .destination_gallary .place_details p {
+  font-size: 16px;
+}
+
